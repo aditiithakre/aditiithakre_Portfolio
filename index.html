@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Runs before the browser can restore the last scroll position, so a
+         refresh always opens at the top. Must stay inline and in the head:
+         a deferred script runs too late to stop the restore. -->
+    <script>
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    </script>
+
+    <title>Aditi Thakre — AI &amp; Machine Learning</title>
+    <meta name="description"
+        content="Aditi Thakre — computer science student at IIIT Pune working on AI, frontend development, and UI/UX. Projects, background, and contact." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ambient glow behind the hero -->
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header>
+        <div class="wrap bar">
+            <a href="#top" class="monogram">Aditi Thakre</a>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Aditi_Thakre_Resume.pdf" class="resume-link">Résumé</a></li>
+                </ul>
+            </nav>
+
+            <div class="bar-tools">
+                <button class="theme-btn" id="theme-btn" aria-label="Switch to light theme" title="Switch theme">
+                    <svg viewBox="0 0 24 24" class="icon-moon" aria-hidden="true">
+                        <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" class="icon-sun" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2" />
+                        <path
+                            d="M12 2.6v2.4M12 19v2.4M2.6 12h2.4M19 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7" />
+                    </svg>
+                </button>
+                <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ============================ HERO ============================ -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+
+                <div class="hero-copy reveal">
+                    <!-- EDIT ME: your one-line current status -->
+                    <span class="status"><span class="dot"></span>3rd-year CS student · open to summer
+                        internships</span>
+
+                    <h1>Aditi builds things <span class="grad">that learn.</span></h1>
+
+                    <p class="lede">
+                        Computer science undergrad getting into <strong>AI and machine learning</strong>. Right now that
+                        means the fundamentals — cleaning up messy data, building models in Python, and making sure I
+                        understand why one works before reaching for a bigger one.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn">View projects</a>
+                        <a href="https://github.com/aditiithakre" class="btn ghost">
+                            <svg viewBox="0 0 16 16" class="ico" aria-hidden="true">
+                                <path
+                                    d="M8 0a8 8 0 0 0-2.5 15.6c.4.07.55-.17.55-.38v-1.3c-2.2.48-2.67-1.07-2.67-1.07-.36-.92-.89-1.16-.89-1.16-.72-.5.06-.49.06-.49.8.06 1.22.82 1.22.82.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.75-.2-3.6-.88-3.6-3.9 0-.86.31-1.57.82-2.12-.09-.2-.36-1 .07-2.1 0 0 .67-.21 2.2.81a7.6 7.6 0 0 1 4 0c1.53-1.02 2.2-.81 2.2-.81.43 1.1.16 1.9.08 2.1.51.55.82 1.26.82 2.12 0 3.03-1.85 3.7-3.61 3.9.28.24.54.73.54 1.48v2.2c0 .21.14.46.55.38A8 8 0 0 0 8 0Z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+
+                    <ul class="hero-stats">
+                        <li><strong>3</strong><span>hackathons</span></li>
+                        <li><strong>4</strong><span>projects shipped</span></li>
+                        <li><strong>2028</strong><span>graduating</span></li>
+                    </ul>
+                </div>
+
+                <!-- abstract interface, not a real mockup -->
+                <div class="hero-art reveal">
+                    <svg class="ui-art" viewBox="0 0 300 190" aria-hidden="true">
+                        <rect class="frame" x="0.75" y="0.75" width="298.5" height="188.5" rx="12" />
+
+                        <circle class="dotk" cx="20" cy="22" r="3" />
+                        <circle class="dotk" cx="32" cy="22" r="3" />
+                        <circle class="dotk" cx="44" cy="22" r="3" />
+                        <rect class="rule" x="60" y="19.5" width="52" height="5" rx="2.5" />
+                        <line class="divider" x1="0.75" y1="44" x2="299.25" y2="44" />
+
+                        <rect class="rule" x="20" y="62" width="46" height="5" rx="2.5" />
+                        <rect class="rule dim" x="20" y="78" width="34" height="5" rx="2.5" />
+                        <rect class="rule dim" x="20" y="94" width="42" height="5" rx="2.5" />
+                        <rect class="rule dim" x="20" y="110" width="30" height="5" rx="2.5" />
+                        <line class="divider" x1="84" y1="44" x2="84" y2="189.25" />
+
+                        <rect class="card" x="104" y="62" width="80" height="54" rx="7" />
+                        <path class="spark" d="M112 104 L128 88 L142 96 L158 74 L176 82" />
+
+                        <rect class="rule" x="200" y="64" width="58" height="5" rx="2.5" />
+                        <rect class="rule dim" x="200" y="78" width="80" height="5" rx="2.5" />
+                        <rect class="rule dim" x="200" y="90" width="66" height="5" rx="2.5" />
+                        <rect class="rule dim" x="200" y="102" width="76" height="5" rx="2.5" />
+
+                        <rect class="tile" x="104" y="134" width="56" height="26" rx="6" />
+                        <rect class="tile" x="170" y="134" width="56" height="26" rx="6" />
+                        <rect class="tile accent" x="236" y="134" width="46" height="26" rx="6" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================ ABOUT ============================ -->
+        <section id="about" class="about">
+            <div class="wrap">
+                <div class="sec-top reveal">
+                    <span class="sec-num">01</span>
+                    <h2 class="sec-head">About</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy reveal">
+                        <p>
+                            I'm a computer science student at IIIT Pune, graduating in 2028. I'm interested in
+                            artificial intelligence alongside frontend development and UI/UX — most of what I know,
+                            I've learned by building.
+                        </p>
+                        <p>
+                            Nearly all of it has come out of hackathons: a multilingual voice assistant for farmers, a
+                            GIS app for groundwater data, a full-stack inventory system. I usually end up on the
+                            frontend in React with Python behind it, and I care about whether the thing is actually
+                            usable by the person it's for.
+                        </p>
+                        <p>
+                            I'm early into machine learning proper and learning it properly rather than quickly — deep
+                            learning is what I'm working toward next. I'm looking for a summer internship where I can
+                            build real things and learn from people who've shipped them.
+                        </p>
+                    </div>
+
+                    <aside class="about-side reveal">
+                        <h3 class="side-head">Toolkit</h3>
+
+                        <div class="skill-group">
+                            <span class="skill-label">Languages</span>
+                            <div class="skills">
+                                <span>Python</span><span>C</span><span>C++</span><span>Java</span><span>JavaScript</span><span>SQL</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-label">Web</span>
+                            <div class="skills">
+                                <span>React</span><span>HTML</span><span>CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-label">Data &amp; tools</span>
+                            <div class="skills">
+                                <span>NumPy</span><span>pandas</span><span>Matplotlib</span><span>Jupyter</span><span>PostgreSQL</span><span>Git</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ PROJECTS ============================ -->
+        <!-- Keep projects you can explain end to end. Small and finished beats
+             ambitious and abandoned. -->
+        <section id="projects">
+            <div class="wrap">
+                <div class="sec-top reveal">
+                    <span class="sec-num">02</span>
+                    <h2 class="sec-head">Projects</h2>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- ---------- DharaAI ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip solid">AWS Hackathon 2026</span>
+                        </div>
+                        <h3>DharaAI</h3>
+                        <p class="project-sub">Multilingual voice assistant for farmers</p>
+                        <p>
+                            Farmers who don't read English are cut off from most agricultural information, so we made
+                            the interface a voice call in their own language. I worked on the voice-to-AI-response
+                            pipeline — speech in, transcription, translation, a generated answer, then speech back out
+                            in the same regional language.
+                        </p>
+                        <div class="tags"><span>Amazon Bedrock</span><span>Transcribe</span><span>Translate</span><span>Polly</span><span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditiithakre/DharaAI">Code <span class="arr">↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- ---------- Inventory Management System ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip">Flipr Hackathon 2025</span>
+                            <span class="chip ghost">Team project</span>
+                        </div>
+                        <h3>Inventory Management System</h3>
+                        <p class="project-sub">Full-stack stock tracking with barcode scanning</p>
+                        <p>
+                            Built with a team of four. The tool splits by role: admins get stock oversight and
+                            reporting dashboards, staff get a camera barcode scanner that updates quantities on the
+                            spot, with manual entry when the camera won't cooperate. Every action lands in an inventory
+                            log, and low stock triggers an email alert. This was my first hackathon and the first real
+                            thing I'd built with a team — I contributed on the frontend, building out the React
+                            interface and learning most of it as I went.
+                        </p>
+                        <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>JWT</span><span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aishwaryagampala/inventory-management-system">Code <span
+                                    class="arr">↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- ---------- FairShare ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip">Personal project</span>
+                        </div>
+                        <h3>FairShare</h3>
+                        <p class="project-sub">Expense splitter for hostels and flats</p>
+                        <p>
+                            A command-line expense splitter for students and roommates — food, rent, utilities, trips —
+                            that works out who owes whom and recommends the fewest payments to settle up. Written in
+                            Python with no dependencies beyond the standard library. Two decisions I'd defend: money is
+                            stored as integer paise so nothing drifts, and balances are recomputed from the raw expense
+                            history rather than kept as running state. A web version is next.
+                        </p>
+                        <div class="tags"><span>Python</span><span>CLI</span><span>JSON</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditiithakre/FairShare">Code <span class="arr">↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- ---------- MindEase ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip wip">In development</span>
+                        </div>
+                        <h3>MindEase</h3>
+                        <p class="project-sub">AI-assisted wellness journal</p>
+                        <p>
+                            <strong>Still building this one.</strong> A personal wellness platform built around mood
+                            journaling, habit tracking, and reflection, with a progress dashboard. I'm using AI for the
+                            parts where a blank page is the obstacle: personalised journaling prompts and weekly
+                            reflections drawn from what the user has already written. Deliberately non-clinical — it
+                            suggests, it doesn't diagnose. The repo goes up once there's something worth showing.
+                        </p>
+                        <div class="tags"><span>React</span><span>Python</span><span>PostgreSQL</span></div>
+                        <!-- EDIT ME: add a Code link here once the repo is public -->
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ CONTACT ============================ -->
+        <section id="contact" class="contact">
+            <div class="wrap">
+                <div class="sec-top reveal">
+                    <span class="sec-num">03</span>
+                    <h2 class="sec-head">Get in touch</h2>
+                </div>
+
+                <div class="contact-card reveal">
+                    <p>
+                        The fastest way to reach me is email. I'm happy to talk about internships, projects, or
+                        anything AI/ML.
+                    </p>
+                    <a href="mailto:aditiithakre@gmail.com" class="mail">aditiithakre@gmail.com</a>
+                    <div class="contact-links">
+                        <a href="https://github.com/aditiithakre">GitHub <span class="arr">↗</span></a>
+                        <a href="https://linkedin.com/in/aditi-thakre-999441367">LinkedIn <span class="arr">↗</span></a>
+                        <a href="Aditi_Thakre_Resume.pdf">Résumé <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrap foot">
+            <span>© <span id="year"></span> Aditi Thakre</span>
+            <span class="foot-note">Built from scratch.</span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
