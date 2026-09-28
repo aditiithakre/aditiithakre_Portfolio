@@ -108,7 +108,7 @@
 
                     <ul class="hero-stats">
                         <li><strong>3</strong><span>hackathons</span></li>
-                        <li><strong>4</strong><span>projects shipped</span></li>
+                        <li><strong>5</strong><span>projects shipped</span></li>
                         <li><strong>2028</strong><span>graduating</span></li>
                     </ul>
                 </div>
@@ -215,10 +215,31 @@
 
                 <div class="project-grid">
 
+                    <!-- ---------- PolyglotPolly ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip solid">Live</span>
+                        </div>
+                        <h3>PolyglotPolly</h3>
+                        <p class="project-sub">Pronunciation practice in your own voice</p>
+                        <p>
+                            Amazon Polly ships one Mandarin voice and one Cantonese voice, both pitched high — so a
+                            lower-voiced learner has to transpose every tone in their head before they can copy it. We
+                            build a voice profile from your pitch and resample the reference speech onto your register,
+                            which keeps each tone contour's exact interval and only moves where it sits. Speech
+                            recognition then scores your attempt word by word across 41 languages.
+                        </p>
+                        <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>Cloudflare Workers</span><span>Supabase</span><span>AWS Bedrock</span><span>Amazon Polly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://polyglotpolly.com">Live site <span class="arr">↗</span></a>
+                        </div>
+                    </article>
+
                     <!-- ---------- DharaAI ---------- -->
                     <article class="project reveal">
                         <div class="project-top">
-                            <span class="chip solid">AWS Hackathon 2026</span>
+                            <span class="chip">AWS Hackathon 2026</span>
                         </div>
                         <h3>DharaAI</h3>
                         <p class="project-sub">Multilingual voice assistant for farmers</p>
@@ -232,6 +253,48 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/aditiithakre/DharaAI">Code <span class="arr">↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- ---------- FairShare ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip solid">Live</span>
+                        </div>
+                        <h3>FairShare</h3>
+                        <p class="project-sub">Expense splitter for hostels and flats</p>
+                        <p>
+                            Splits food, rent, utilities and trip costs between roommates, tracks who owes whom, and
+                            recommends the fewest payments that settle everyone up. It started as a Python CLI and is
+                            now a web app with accounts and a shared dashboard. Two decisions I'd defend from the
+                            original: money is stored as integer paise so nothing drifts, and balances are recomputed
+                            from the raw expense history rather than kept as running state.
+                        </p>
+                        <div class="tags"><span>React</span><span>Vite</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>Python</span><span>GitHub Actions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aditiithakre.github.io/FairShare/">Live site <span class="arr">↗</span></a>
+                            <a href="https://github.com/aditiithakre/FairShare">Code <span class="arr">↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- ---------- Gift Oracle ---------- -->
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="chip solid">Live</span>
+                        </div>
+                        <h3>Gift Oracle</h3>
+                        <p class="project-sub">Five odd questions, three gift ideas</p>
+                        <p>
+                            Gift finders usually ask about hobbies and return the same candles every time. This one
+                            asks deliberately strange questions instead — what they'd do with ten dollars and a free
+                            Saturday, which object they'd rescue from a polite fire — because oblique questions reveal
+                            more about a person than a category ever does. Three suggestions come back, each with the
+                            reason it fits. No account, about a minute end to end.
+                        </p>
+                        <div class="tags"><span>Cloudflare Workers</span></div>
+                        <div class="project-links">
+                            <a href="https://try.giftoracle.workers.dev">Live site <span class="arr">↗</span></a>
                         </div>
                     </article>
 
@@ -257,44 +320,6 @@
                             <a href="https://github.com/Aishwaryagampala/inventory-management-system">Code <span
                                     class="arr">↗</span></a>
                         </div>
-                    </article>
-
-                    <!-- ---------- FairShare ---------- -->
-                    <article class="project reveal">
-                        <div class="project-top">
-                            <span class="chip">Personal project</span>
-                        </div>
-                        <h3>FairShare</h3>
-                        <p class="project-sub">Expense splitter for hostels and flats</p>
-                        <p>
-                            A command-line expense splitter for students and roommates — food, rent, utilities, trips —
-                            that works out who owes whom and recommends the fewest payments to settle up. Written in
-                            Python with no dependencies beyond the standard library. Two decisions I'd defend: money is
-                            stored as integer paise so nothing drifts, and balances are recomputed from the raw expense
-                            history rather than kept as running state. A web version is next.
-                        </p>
-                        <div class="tags"><span>Python</span><span>CLI</span><span>JSON</span></div>
-                        <div class="project-links">
-                            <a href="https://github.com/aditiithakre/FairShare">Code <span class="arr">↗</span></a>
-                        </div>
-                    </article>
-
-                    <!-- ---------- MindEase ---------- -->
-                    <article class="project reveal">
-                        <div class="project-top">
-                            <span class="chip wip">In development</span>
-                        </div>
-                        <h3>MindEase</h3>
-                        <p class="project-sub">AI-assisted wellness journal</p>
-                        <p>
-                            <strong>Still building this one.</strong> A personal wellness platform built around mood
-                            journaling, habit tracking, and reflection, with a progress dashboard. I'm using AI for the
-                            parts where a blank page is the obstacle: personalised journaling prompts and weekly
-                            reflections drawn from what the user has already written. Deliberately non-clinical — it
-                            suggests, it doesn't diagnose. The repo goes up once there's something worth showing.
-                        </p>
-                        <div class="tags"><span>React</span><span>Python</span><span>PostgreSQL</span></div>
-                        <!-- EDIT ME: add a Code link here once the repo is public -->
                     </article>
 
                 </div>
